@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Praya Raditya • Web Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <!-- Favicon alami -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='90' font-size='90' fill='%235e8c6a'>🌿</text></svg>">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+  <!-- Background Partikel Alam (opsional) -->
+  <div id="leaf-particles"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">Prayfornicetry</div>
+    <ul class="nav-links">
+      <li><a href="#home">Beranda</a></li>
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#skills">Keahlian</a></li>
+      <li><a href="#portfolio">Proyek</a></li>
+      <li><a href="#contact">Kontak</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Halo, Saya <span>Praya Raditya</span></h1>
+      <p class="role">Web Developer & Designer</p>
+      <p class="tagline">Membangun Teamworking, analisis, teknologia, dan semangat indonesia emas 2045</p>
+      <div class="hero-btns">
+        <a href="#portfolio" class="btn-primary">Lihat Proyek</a>
+        <a href="#contact" class="btn-outline">Hubungi Saya</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="asset/img/pp.jpg" alt="Foto Profil Praya Raditya" loading="lazy">
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section fade-in-section">
+    <div class="container">
+      <h2 class="section-title">Tentang Saya</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            Saya seorang pengembang web yang bersemangat tentang teknologi, desain, dan pengalaman pengguna.
+            Dengan latar belakang di bidang RPL dan mempunyai pengalaman dibidang IT lebih dari 3 tahun,
+            saya bisa mengembangkan aplikasi berbasis web dengan menggunakan framework Laravel, PHP Native, MySQL, dan Bootstrap.
+            Dan mampu diajak bekerja sama dalam tim untuk menyelesaikan proyek dengan baik. Saya selalu berusaha untuk belajar hal baru dan meningkatkan keterampilan saya di bidang teknologi.
+          </p>
+          <p>
+            Di luar coding, saya juga berhobi menjelajah tempat tempat seperti pantai, gunung, hutan dan alam lain nya, selain hobi dalam coding dan berpetualang, saya juga hobi bermain game, terutama game yang memiliki cerita yang menarik dan grafis yang indah. Saya percaya bahwa teknologi terbaik lahir dari pemahaman mendalam tentang kebutuhan manusia.
+            
+          </p>
+          <!-- 
+            <a href="asset/cv-saya.pdf" class="btn-outline" download>Unduh CV</a> 
+            -->
+        </div>
+        <div class="about-stats">
+          <div class="stat-item">
+            <span class="stat-number">20+</span>
+            <span class="stat-label">Proyek Selesai</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">Tahun Pengalaman</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section bg-light fade-in-section">
+  <div class="container">
+    <h2 class="section-title">Keahlian Saya</h2>
+    <!-- Icon Grid -->
+    <div class="skills-grid">
+      <!-- Frontend -->
+      <div class="skill-item">
+        <i class="fab fa-html5"></i>
+        <h3>HTML5</h3>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-css3-alt"></i>
+        <h3>CSS3</h3>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-js"></i>
+        <h3>JavaScript</h3>
+      </div>
+
+      <!-- Backend -->
+      <div class="skill-item">
+        <i class="fab fa-php"></i>
+        <h3>PHP</h3>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-laravel"></i>
+        <h3>Laravel</h3>
+      </div>
+
+      <!-- Database -->
+      <div class="skill-item">
+        <i class="fas fa-database"></i>
+        <h3>MySQL</h3>
+      </div>
+
+      <!-- UI/UX Design -->
+      <div class="skill-item">
+        <i class="fas fa-paint-brush"></i>
+        <h3>UI/UX Design</h3>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-figma"></i>
+        <h3>Figma</h3>
+      </div>
+
+      <!-- Data & Sistem -->
+      <div class="skill-item">
+        <i class="fas fa-chart-line"></i>
+        <h3>Analisis Sistem & Data</h3>
+      </div>
+      <div class="skill-item">
+        <i class="fas fa-cogs"></i>
+        <h3>Sistem Informasi</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="section fade-in-section">
+    <div class="container">
+      <h2 class="section-title">Proyek Terbaru</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <div class="portfolio-category">Laravel</div>
+          <img src="asset/img/P1.jpg" alt="Sistem Parkir Cerdas">
+          <div class="portfolio-overlay">
+            <h3>Sistem kasir penjualan</h3>
+            <p>Laravel, MySQL, Bootstrap</p>
+            <a href="#" class="btn-small">Detail</a>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-category">Laravel</div>
+          <img src="asset/img/P2.jpg" alt="POS Restoran">
+          <div class="portfolio-overlay">
+            <h3>Project System Parking</h3>
+            <p>PHP Native, MySQL, Bootstrap</p>
+            <a href="#" class="btn-small">Detail</a>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-category">Laravel</div>
+          <img src="asset/img/P3.jpg" alt="Pengaduan Sekolah">
+          <div class="portfolio-overlay">
+            <h3>Pengaduan Sarana Sekolah</h3>
+            <p>Laravel, MySQL, Bootstrap</p>
+            <a href="#" class="btn-small">Detail</a>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-category">Laravel</div>
+          <img src="asset/img/P4.jpg" alt="Pengaduan Sekolah">
+          <div class="portfolio-overlay">
+            <h3>Peminjaman Alat</h3>
+            <p>Laravel, MySQL, Bootstrap</p>
+            <a href="#" class="btn-small">Detail</a>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-category">Laravel</div>
+          <img src="asset/img/P5.jpg" alt="Pengaduan Sekolah">
+          <div class="portfolio-overlay">
+            <h3>Peminjaman Buku</h3>
+            <p>Laravel, MySQL, Bootstrap</p>
+            <a href="#" class="btn-small">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+<!-- Contact -->
+<section id="contact" class="section bg-light fade-in-section">
+  <div class="container">
+    <h2 class="section-title">Kontak Saya</h2>
+    <div class="contact-content">
+      <div class="contact-info">
+        <p><i class="fas fa-envelope"></i> tumbalgameee@gmail.com</p>
+        <!-- About 
+        <p><i class="fas fa-phone"></i> +62 812-3456-7890</p>
+        -->
+        <p><i class="fas fa-map-marker-alt"></i> Yogyakarta, Indonesia</p>
+        <div class="social-links">
+          <a href="https://github.com/prayfornicetry" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.tiktok.com/@prayfornicetry" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="https://instagram.com/prayfornicetry" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- ✅ Form yang benar -->
+      <form class="contact-form" id="contactForm">
+        <input type="text" name="from_name" placeholder="Nama Anda" required>
+        <input type="email" name="from_email" placeholder="Email Anda" required>
+        <textarea name="message" placeholder="Pesan Anda" rows="5" required></textarea>
+        <button type="submit" class="btn-primary">Kirim Pesan</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Prayfornicetry. Dibuat dengan 🌿 untuk dunia yang lebih baik.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
